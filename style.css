@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    padding: 50px;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.coffee {
+    width: 20%;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.container-contact {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+#home-bg{
+    background: url("pictures/coffee\ express.png");
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+}
+
+#coffee-express {
+    align-self: center;
+    margin-right: 120px;
+    font-size: 3rem;
+    font-family: 'Gloria Hallelujah', cursive; 
+}   
+
+#coffee-express:hover {
+    color: salmon;
+}
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}   
+
+.mission, .vission, .values {
+    background: #f5f5f5;
+    text-align: center;
+    align-self: center;
+    width: 50%;
+    margin: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#2bff8a, #2298ff);
+    border-radius: 10px;
+}
+
